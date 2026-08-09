@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Mission Budget</title>
+
+  <!-- Tailwind CSS, no build step -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            army: { green: '#1E2A1A', olive: '#4B5320', gold: '#C5A059', tan: '#E8E1D3' },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Chart.js for the expense pie chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+  <style>
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-army-tan">
+  <div id="root"></div>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
